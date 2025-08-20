@@ -1,20 +1,22 @@
+import type { Timestamp } from 'firebase/firestore';
+
 export interface NewsItem {
-	NewsID: number;
-	Source: string;
-	Updated: string;
-	TimeAgo: string;
-	Title: string;
-	Content: string;
-	Url: string;
-	TermsOfUse: string;
-	Author: string;
-	Categories: string;
-	PlayerID: number;
-	TeamID: number;
-	Team: string;
-	PlayerID2: number | null;
-	TeamID2: number | null;
-	Team2: string | null;
-	OriginalSource: string;
-	OriginalSourceUrl: string;
+	newsId: number;
+	source: string;
+	updated: Timestamp;
+	timeAgo: string;
+	title: string;
+	content: string;
+	url: string;
+	termsOfUse: string;
+	author: string;
+	categories: string;
+	playerId: number;
+	teamId: number;
+	team: string;
+	playerId2: number | null;
+	teamId2: number | null;
+	team2: string | null;
+	originalSource: string;
+	originalSourceUrl: string;
 }
